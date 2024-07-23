@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="XuLiDangKi.java" method="post" enctype="multipart/form-data"> <!---->
+        <caption>ĐĂNG KÍ THÀNH VIÊN</caption>
+        <table>
+            <tr>
+                <td>Họ tên</td>
+                <td>
+                    <input name="hoten">
+                </td>
+            </tr>
+            <tr>
+                <td>Mật khẩu</td>
+                <td>
+                    <input type="password" name="matkhau">
+                </td>
+            </tr>
+            <tr>
+                <td>Nghề nghiệp</td>
+                <td>
+                    <select name="nghenghiep">
+                        <option value="SV">Sinh viên</option>
+                        <option value="GV">Giảng viên</option>
+                        <option value="BS" selected>Bác sĩ</option> <!-- selected: mặc định chọn -->
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Giới tính</td>
+                <td>
+                    <input type="radio" value="nam"
+                    name="gioitinh">Nam
+                    <input type="radio" value="nu"
+                    name="gioitinh" checked>Nữ <!-- checked: mặc định chọn -->
+                    <!-- name phải giống nhau-->
+                </td>
+            </tr>
+            <tr>
+                <td>Ngoại ngữ</td>
+                <td>
+                    <input type="checkbox" value="AV" name="ngoaingu">Anh
+                    <input type="checkbox" value="TV"name="ngoaingu">Trung
+                    <input type="checkbox" value="NV" name="ngoaingu">Nhật
+                    <!--name giống nhau để xử lí dạng mảng-->
+                </td>
+            </tr>
+            <tr>
+                <td>Hình</td>
+                <td>
+                    <input type="file" name="hinh">
+                </td>
+            </tr>
+            <tr>
+                <td>Sở thích</td>
+                <td>
+                    <textarea rows="5" cols="100"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button
+                    type="submit">Đăng kí
+                    </button>
+                    <button type="reset">Nhập lại
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
