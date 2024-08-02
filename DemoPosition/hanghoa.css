@@ -1,0 +1,21 @@
+.box{
+    width: 250px;
+    height: 300px;
+    border: 1px solid red;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    display: inline-block; 
+    margin: 5px;
+}
+
+.box > img{
+    width: 180px;
+}
+
+.new{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px !important;
+}
